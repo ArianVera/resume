@@ -443,6 +443,11 @@ figure {
   visibility: hidden;
 }
 
+.word-wrap{
+  word-break: keep-all !important;
+  word-wrap: normal;
+}
+
 pre {
   display: block;
   padding: 9.5px;
