@@ -1,0 +1,191 @@
+@font-face {
+	font-family: "Bebas Neue"; 
+    src: url('../fonts/BebasNeue.otf') format('opentype'); 
+	font-weight:lighter;    
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-size: 12pt;
+    font-size: 100%;
+
+}
+
+a{text-decoration:none;}
+
+a:hover{cursor:pointer;}
+
+.clear{clear:both;}
+
+img{width:100%; height:auto; overflow: hidden;}
+
+body{ width:100%; height:100vh; background: url(../img/bg.jpg) no-repeat fixed; background-size: cover; font-family: "Bebas Neue", sans-serif;  }
+
+#wrapper{width:990px; margin:0 auto; padding:1em; position: relative;}
+
+#cash-field{width:30%; position: absolute; left:0; top:1em; color:#fff;}
+
+#cash-title{ width:40%;}
+
+.cash-box{  width:70%; padding:2px; height:50px; background:#333; border:5px solid #CCC; font-size: 2em; clear:both;}
+
+#dollar-sign{display:inline-block;}
+
+#cash-amount{ display:inline-block;}
+
+#rules-field{position:absolute; width:35%; top:150px; left:0; color:#187105;}
+
+.rules-title{font-size: 3em;}
+
+.rules-description{font-size: 1.5em; margin-bottom:10px; line-height: 1em;}
+
+#card-totals-field{margin-top: 40px;}
+
+.card-totals{font-size: 2em;}
+
+#chips-field{ width:30%; position: absolute; right:0px; text-align: right; color:#fff; overflow: hidden;}
+
+#chips-field > .cash-box{float:right;}
+
+#bet-image{width:65%; float:right;}
+
+#bet-amount{display:inline-block;}
+
+#chip-images{float:right; width:50%; margin-top:50px; position: relative; left:0%;}
+
+#chip-images img{display:block; width:60%; }
+
+#chips-field img:hover{cursor:pointer;}
+
+#logo{width:23%; margin:0 auto;}
+
+.card-field{width:20%; height:200px; margin:10px auto; border:2px solid #187105; position:relative;}
+
+#house-card-field{width:60%; margin:0 auto; position:relative; top:-175px; margin-bottom:-150px; text-align: center;}
+
+#player-card-field{width:60%;  margin:0 auto; position:relative; top:-175px; margin-bottom:-150px; text-align: center;}
+
+.card{width:15%; height:125px;  display:inline-block; margin:5px; }
+
+#chip-bet-field{width:90px; height:90px; margin:10px auto; border:2px solid #187105; border-radius:50px; position:relative;}
+
+.betted-chips{position: absolute;}
+
+#actions-field{width:100%; height:50px; position:absolute; bottom:30px; overflow: hidden; }
+
+.button{width:13%; margin-top:10px; position: absolute;}
+
+.button:hover{cursor: pointer;}
+
+#hit-button{left:0%; }
+
+#stand-button{right:0%;}
+
+#notification-field{position: absolute; text-align: center; width:100%; top:38vh; display:none; font-size:5em; 
+	color:#fc0; font-weight:bold; z-index:5; text-shadow: 3px 3px 3px #000;}
+
+
+
+
+
+
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+
+.hvr-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+
+}
+
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

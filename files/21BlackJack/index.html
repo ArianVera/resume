@@ -1,0 +1,63 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>21 BlackJack</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width:768px) and (max-width:980px)" href="css/style_768.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 600px) and (max-width:767px)" href="css/style_600.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width:300px) and (max-width:599px)" href="css/style_300.css">
+</head>
+<body>
+<div id="wrapper">
+	<div id="cash-field">
+		<div id="cash-title"><img src="img/credit.png" alt="Credit" /></div>
+		<div class="cash-box">
+			<span id="dollar-sign">$</span><div id="cash-amount"></div>
+		</div>	
+	</div><!-- END #cash-field -->
+	<div id="rules-field">
+		<h2 class="rules-title">Rules</h2>
+		<ul>
+			<li class="rules-description">Closest to 21 wins, go over 21 and you lose</li>
+			<li class="rules-description">Click "Hit Me" if player wants to draw an additional card</li>
+			<li class="rules-description">Click "Stand" to stay where you are and see who wins</li>
+			<li class="rules-description">Click on chips if you want to place a bet</li>
+		</ul>
+		<div id="card-totals-field">
+			<div class="card-totals">House Card Total: &nbsp<span id="house-card-total"></span></div>
+			<div class="card-totals">Player Card Total: <span id="player-card-total"></span></div>
+		</div>		
+	</div><!-- END #rules-field	-->
+	<div id="chips-field">
+		<div id="bet-image"><img src="img/bet.png" alt="Bet" /></div>
+		<div class="cash-box">
+			<span id="dollar-sign">$</span><div id="bet-amount">0</div>
+		</div>
+		<div id="chip-images">	
+			<img class="hvr-grow chip-img" onclick="bet25()" src="img/25_chip.png" alt="$25 Chip" />
+			<img class="hvr-grow chip-img" onclick="bet50()" src="img/50_chip.png" alt="$50 Chip" />
+			<img class="hvr-grow chip-img" onclick="bet100()" src="img/100_chip.png" alt="$100 Chip" />
+			<img class="hvr-grow chip-img" onclick="bet500()" src="img/500_chip.png" alt="$500 Chip" />
+		</div>	
+	</div><!--END #chips-field -->	
+	<div id="logo"><img src="img/logo.png" alt="21 BlackJack logo"></div>
+	<div class="card-field"></div>
+	<div id="house-card-field"></div><!-- END #house-card-field -->
+	
+	<div class="card-field"></div>
+	<div id="player-card-field"></div><!-- END #player-card-field -->
+	<div id="actions-field">
+		<div id="hit-button" class="button" onclick="hitMe()"><img src="img/hit_button.png" alt="Hit Me Button" /></div>	
+		<div id="stand-button" class="button" onclick="stand()"><img src="img/stand_button.png" alt="Stand Button" /></div>
+	</div><!-- END #actions-field -->
+	<div id="chip-bet-field"></div><!--END #chip-bet-field -->
+	<div id="notification-field"></div>
+	
+</div><!-- END #wrapper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+<script src="js/functions.js"></script>
+</body>
+</html>

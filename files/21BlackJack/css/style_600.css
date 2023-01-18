@@ -1,0 +1,19 @@
+body{	font-size: 72.5%;}
+
+#wrapper{width:600px;}
+
+.cash-box{ padding:2px; height:40px; }
+
+#rules-field{ top:100px;}
+
+#house-card-field{margin-bottom:-105px; top:-125px; }
+
+#player-card-field{margin-bottom:-105px; top:-125px;}
+
+.card-field{height:150px;}
+
+.card{width:15%; height:75px;  display:inline-block; margin:5px; }
+
+#notification-field{top:200px;}
+
+.button{width:20%;}

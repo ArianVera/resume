@@ -1,0 +1,33 @@
+body{font-size: 62.5%;}
+
+#wrapper{width:300px;}
+
+.cash-box{ width:100%; padding:2px; height:40px; }
+
+#chips-field{ width:100%; position: absolute; right:0px; overflow: hidden;}
+
+#bet-image{width:20%; float:right;}
+
+#chips-field > .cash-box{width:30%;}
+
+#chip-images{float:left; width:100%; top:-35px;}
+
+#chip-images img{display:block; width:15%; }
+
+#rules-field{ display:none;}
+
+#house-card-field{margin:0px auto; top:-85px;   }
+
+#player-card-field{margin:0px auto; top:-85px; }
+
+.card-field{ width: 30%; height:100px; top:15px; margin:0 auto; }
+
+.card{width:25%; height:75px;  display:inline-block; margin:5px; }
+
+#chip-bet-field{display:none;}
+
+#notification-field{display:none; top:120px;}
+
+#actions-field{width: 40%; height:200px; margin:0 auto; right:-10%; bottom:100px; z-index:5;}
+
+.button{width:70%; position: relative; display:block; margin:10px; }
